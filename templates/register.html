@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<h2>REGISTER</h2>
+   <br>
+      <br>
+      <br>
+<form action="." method="post">
+
+{% csrf_token %}
+
+<!--  Date of birth:<br>-->
+<!--  <input type="date" name="date of birth" >-->
+<!--  <br>-->
+  Username:<br>
+  <input type="text" name="Username" >
+  <br>
+  Password:<br>
+  <input type="password" name="Password">
+  <br>
+  Conform Password:<br>
+  <input type="password" name="last name">
+  <br>
+  First_name:<br>
+  <input type="text" name="first name" >
+  <br>
+  Email:<br>
+  <input type="email" name="Email">
+  <br><br>
+  <input type="submit" value="Submit">
+
+</form>
+    {% for m in messages %}
+    <h>
+        {{ m }}
+    </h>
+    {% endfor %}
+
+
+</body>
+</html>
